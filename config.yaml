@@ -6,11 +6,11 @@ token_usage:
   enabled: false
 
 models:
-  - name: qwen2.5
+  - name: "qwen2.5:7b"
     display_name: Qwen2.5 7B (Ollama)
     use: langchain_ollama:ChatOllama
-    model: qwen2.5:7b
-    base_url: http://host.docker.internal:11434
+    model: "qwen2.5:7b"
+    base_url: http://localhost:11434
     num_predict: 4096
     temperature: 0.7
     supports_thinking: false
