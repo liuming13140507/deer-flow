@@ -20,13 +20,8 @@ __pycache__/
 .venv
 venv/
 
-# Environment variables
-.env
-
-# Configuration files
-config.yaml
+# Configuration files (keep mcp local; may contain paths/secrets)
 mcp_config.json
-extensions_config.json
 
 # IDE
 .idea/
