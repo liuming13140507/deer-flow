@@ -2,11 +2,17 @@
 
 本文档记录工作流修改过程及常用命令。
 
+## 会话记录索引
+
+| 日期 | 文件 | 主题 |
+|------|------|------|
+| 2026-04-14 | [session-summary-20260414-171031.md](session-summary-20260414-171031.md) | DeerFlow 框架深度分析、Agent 应用架构理解、Archon 对比 |
+
 ## 环境配置
 
 ### Agent 安装
 
-**当前选择：方案四**
+**当前选择：方案五**
 
 #### 方案一
 
@@ -88,4 +94,7 @@ make stop
 make dev
 ```
 
-访问 http://localhost:2026/
+#### 方案五
+Gimini可以使用，但是因为一次请求loop会调用多次，API KEY模式计费规则不明确，请求了2次就提示超出限额，因为切换到navidia llama，只需要注册后绑定手机号就会生成API_KEY，用于dev，有效期1年，也没有地域限制
+
+访问 [http://localhost:2026/](http://localhost:2026/)
