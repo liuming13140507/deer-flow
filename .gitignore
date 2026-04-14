@@ -19,6 +19,8 @@ __pycache__/
 # Virtual environments
 .venv
 venv/
+.env/*
+.env
 
 # Configuration files (keep mcp local; may contain paths/secrets)
 mcp_config.json
