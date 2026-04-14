@@ -72,16 +72,20 @@ ollama run qwen2.5-7b-local
 
 #### 方案四
 
+放弃本地 Ollama 方案（Mac 上无法启用 GPU 加速，推理速度太慢），改用 Google Gemini 云端 API。
+
+- 模型：`gemini-2.5-flash`
+- SDK：`langchain_google_genai:ChatGoogleGenerativeAI`（原生 SDK）
+- 配置文件：`config.yaml` models 部分
+- API Key：在 `.env` 中设置 `GEMINI_API_KEY`
+- 获取 Key：[Google AI Studio](https://aistudio.google.com/apikey)
 
 ### 运行
-检查是否模型安装成功
-```
-ollama list
-```
-运行
-```
+
+```bash
 cd /Users/liuming/proj/deer-flow
 make stop
 make dev
-http://localhost:2026/
 ```
+
+访问 http://localhost:2026/
